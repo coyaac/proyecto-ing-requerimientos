@@ -1,0 +1,477 @@
+¡Perfecto! Aquí tienes el one-page de tu proyecto web inspirado en tu idea de red social musical y siguiendo el estilo del ejemplo de BabySleep:
+
+🎵 SoundMate – Red Social Musical Basada en tu Spotify
+🎧 Descripción del proyecto
+
+SoundMate es una red social para amantes de la música que permite compartir lo que escuchas, descubrir nuevas canciones y conectarte con personas que tienen gustos similares, todo basado en tu perfil de Spotify. A través de una interfaz personalizada y recomendaciones inteligentes, SoundMate transforma tu historial de escucha en una experiencia social única.
+
+📲 Funcionalidades principales
+
+Sincronización automática con tu cuenta de Spotify.
+
+Perfil musical personalizado: artistas favoritos, géneros, playlists.
+
+Recomendaciones de usuarios con gustos similares.
+
+Feed en tiempo real con lo que tus amigos están escuchando.
+
+Sugerencias de música personalizadas.
+
+Posibilidad de compartir canciones, playlists y estados musicales.
+
+⚙️ Aspectos técnicos
+🏗️ Arquitectura general
+
+Frontend: Next.js + TailwindCSS
+
+Backend: Node.js + Express
+
+Base de datos: PostgreSQL (via Prisma ORM)
+
+Autenticación: OAuth 2.0 con Spotify
+
+Integración externa: Spotify Web API
+
+Recomendaciones: Sistema basado en embeddings musicales (vectores de similitud)
+
+🧩 Módulos principales
+1. Login / Registro
+
+Autenticación vía Spotify (OAuth).
+
+Almacenamiento seguro de tokens y datos del usuario.
+
+Opción para configurar privacidad del perfil.
+
+2. Perfil musical
+
+Estadísticas: artistas más escuchados, géneros, canciones top.
+
+Visualización de cambios semanales/mensuales.
+
+Comparación de perfiles con amigos.
+
+3. Feed social
+
+Muestra lo que tus contactos están escuchando en tiempo real.
+
+Opción de dar "me gusta", comentar y guardar canciones.
+
+Publicaciones personalizadas (ej. “Mi canción del día”).
+
+4. Recomendador de amistades
+
+Algoritmo que analiza tu historial y genera matches musicales.
+
+Muestra perfiles con compatibilidad alta.
+
+Posibilidad de seguir o chatear con matches.
+
+5. Recomendador musical
+
+Playlist personalizadas según tu historial + el de tus amigos.
+
+Explorador por moods, géneros y artistas en tendencia.
+
+6. Configuración y privacidad
+
+Control total sobre qué se comparte.
+
+Filtros para mostrar u ocultar actividad.
+
+Notificaciones y gestión de conexión con Spotify.
+
+🧪 Tecnologías utilizadas
+Componente	Tecnología
+Frontend	Next.js + TailwindCSS
+Backend	Node.js + Express
+Base de datos	PostgreSQL + Prisma
+Autenticación	OAuth 2.0 (Spotify)
+Recomendaciones	TensorFlow.js + cosine similarity
+APIs externas	Spotify Web API
+Visualización	Chart.js / D3.js
+🗺️ Roadmap
+MVP (Versión inicial)
+
+Login con Spotify
+
+Perfil musical básico
+
+Feed con lo que estás escuchando
+
+Recomendaciones simples de usuarios
+
+Fase 2
+
+Sistema de mensajes y conexión entre usuarios
+
+Recomendaciones de música personalizadas
+
+Estadísticas avanzadas y visualizaciones
+
+Fase 3
+
+Algoritmo de matching musical más preciso (AI)
+
+Playlist colaborativas
+
+Versión móvil (PWA o React Native)
+
+👥 Público objetivo
+
+Melómanos que buscan nuevas conexiones
+
+Usuarios activos de Spotify
+
+Personas que valoran la música como lenguaje social
+
+Artistas independientes que buscan visibilidad
+
+🚀 Objetivo final
+
+Crear una plataforma donde la música sea el puente para crear conexiones humanas auténticas, permitiendo descubrir canciones, artistas y personas a través de lo que más te representa: lo que escuchas.
+
+¿Quieres que lo convierta en un README.md listo para GitHub? ¿O que te ayude a desarrollar una estructura de carpetas para empezar el proyecto en Next.js?
+
+Dijiste:
+readme listo para github porfavor
+ChatGPT dijo:
+
+¡Claro! Aquí tienes el contenido del README.md listo para que lo pegues en tu repositorio de GitHub:
+
+# 🎵 SoundMate – Red Social Musical Basada en tu Spotify
+
+## 🎧 Descripción del proyecto  
+**SoundMate** es una red social para amantes de la música que permite compartir lo que escuchas, descubrir nuevas canciones y conectarte con personas que tienen gustos similares, todo basado en tu perfil de Spotify. A través de una interfaz personalizada y recomendaciones inteligentes, SoundMate transforma tu historial de escucha en una experiencia social única.
+
+---
+
+## 📲 Funcionalidades principales
+
+- 🔗 Sincronización automática con tu cuenta de Spotify  
+- 🧬 Perfil musical personalizado: artistas favoritos, géneros, playlists  
+- 🧑‍🤝‍🧑 Recomendaciones de usuarios con gustos similares  
+- 📡 Feed en tiempo real con lo que tus amigos están escuchando  
+- 🎯 Sugerencias de música personalizadas  
+- 🔁 Compartir canciones, playlists y estados musicales  
+
+---
+
+## ⚙️ Aspectos técnicos
+
+### 🏗️ Arquitectura general
+
+- **Frontend:** Next.js + TailwindCSS  
+- **Backend:** Node.js + Express  
+- **Base de datos:** PostgreSQL (via Prisma ORM)  
+- **Autenticación:** OAuth 2.0 con Spotify  
+- **Integración externa:** Spotify Web API  
+- **Recomendaciones:** Sistema basado en embeddings musicales (vectores de similitud)
+
+---
+
+### 🧩 Módulos principales
+
+#### 1. Login / Registro
+- Autenticación vía Spotify (OAuth)
+- Almacenamiento seguro de tokens y datos del usuario
+- Opción para configurar privacidad del perfil
+
+#### 2. Perfil musical
+- Estadísticas: artistas más escuchados, géneros, canciones top
+- Visualización de cambios semanales/mensuales
+- Comparación de perfiles con amigos
+
+#### 3. Feed social
+- Muestra lo que tus contactos están escuchando en tiempo real
+- Opción de dar "me gusta", comentar y guardar canciones
+- Publicaciones personalizadas (ej. “Mi canción del día”)
+
+#### 4. Recomendador de amistades
+- Algoritmo que analiza tu historial y genera matches musicales
+- Muestra perfiles con compatibilidad alta
+- Posibilidad de seguir o chatear con matches
+
+#### 5. Recomendador musical
+- Playlists personalizadas según tu historial + el de tus amigos
+- Explorador por moods, géneros y artistas en tendencia
+
+#### 6. Configuración y privacidad
+- Control total sobre qué se comparte
+- Filtros para mostrar u ocultar actividad
+- Notificaciones y gestión de conexión con Spotify
+
+---
+
+## 🧪 Tecnologías utilizadas
+
+| Componente        | Tecnología                     |
+|-------------------|-------------------------------|
+| Frontend          | Next.js + TailwindCSS         |
+| Backend           | Node.js + Express             |
+| Base de datos     | PostgreSQL + Prisma ORM       |
+| Autenticación     | OAuth 2.0 (Spotify)           |
+| Recomendaciones   | TensorFlow.js + Cosine Similarity |
+| APIs externas     | Spotify Web API               |
+| Visualización     | Chart.js / D3.js              |
+
+---
+
+## 🗺️ Roadmap
+
+### MVP (Versión inicial)
+- ✅ Login con Spotify  
+- ✅ Perfil musical básico  
+- ✅ Feed con lo que estás escuchando  
+- ✅ Recomendaciones simples de usuarios  
+
+### Fase 2
+- 💬 Sistema de mensajes y conexión entre usuarios  
+- 🎧 Recomendaciones de música personalizadas  
+- 📊 Estadísticas avanzadas y visualizaciones  
+
+### Fase 3
+- 🧠 Algoritmo de matching musical más preciso (AI)  
+- 🤝 Playlist colaborativas  
+- 📱 Versión móvil (PWA o React Native)
+
+---
+
+## 👥 Público objetivo
+
+- Melómanos que buscan nuevas conexiones  
+- Usuarios activos de Spotify  
+- Personas que valoran la música como lenguaje social  
+- Artistas independientes que buscan visibilidad  
+
+---
+
+## 🚀 Objetivo final
+
+Crear una plataforma donde la música sea el puente para crear conexiones humanas auténticas, permitiendo descubrir canciones, artistas y personas a través de lo que más te representa: lo que escuchas.
+
+---
+
+## 📌 Estado del proyecto
+
+> 🚧 Proyecto en desarrollo activo  
+>  
+> Se aceptan colaboraciones y sugerencias. ¡Feel free to fork and contribute!
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+
+---
+
+## 🤝 Contribuciones
+
+¿Quieres colaborar? ¡Genial! Por favor, revisa las normas de contribución en [CONTRIBUTING.md](CONTRIBUTING.md) y comienza con un pull request.
+
+---
+
+¿Qué sigue?
+
+Si quieres, puedo ayudarte con:
+
+CONTRIBUTING.md
+
+LICENSE
+
+Estructura de carpetas para comenzar el proyecto en Next.js
+
+Wireframes de diseño
+
+Mock de base de datos (modelo de datos)
+
+¿Con cuál quieres que sigamos?
+
+Dijiste:
+ayudame con todo lo que dijiste
+ChatGPT dijo:
+
+¡Perfecto! Vamos a armar todo lo necesario para lanzar el proyecto bien organizado desde el inicio. Aquí tienes una guía paso a paso con los archivos y estructuras que mencioné:
+
+✅ 1. CONTRIBUTING.md
+
+Archivo para colaborar de forma ordenada:
+
+# 🤝 Contribuir a SoundMate
+
+¡Gracias por tu interés en contribuir a SoundMate! Este documento describe cómo puedes colaborar de forma efectiva.
+
+---
+
+## 🛠️ Cómo contribuir
+
+1. **Haz un fork** de este repositorio.
+2. **Crea una rama** con un nombre claro (`feature/nombre`, `fix/error`, etc.).
+3. **Realiza tus cambios.**
+4. **Haz un commit claro y descriptivo.**
+5. **Envía un Pull Request.**
+
+---
+
+## 💬 Reglas básicas
+
+- Sigue la estructura y estilo del código existente.
+- Escribe commits descriptivos.
+- No incluyas dependencias innecesarias.
+- Usa inglés para comentarios y commits.
+
+---
+
+## 🧪 Testing
+
+Antes de subir tu PR:
+
+- Asegúrate de que la app compile.
+- Verifica que no hayas roto funcionalidades existentes.
+- (Próximamente) Correr tests con `npm run test`.
+
+---
+
+## 📂 Estructura sugerida
+
+Consulta el archivo `README.md` o pide ayuda abriendo una **issue**.
+
+---
+
+## 🙋‍♀️¿Dudas?
+
+Abre un issue o escríbenos en la sección de [Discussions](https://github.com/tu-repo/discussions).
+
+Gracias por tu ayuda 💜
+
+📄 2. LICENSE (MIT)
+
+Una licencia de uso libre:
+
+MIT License
+
+Copyright (c) 2025 [Tu Nombre]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+
+[Texto completo de la licencia MIT]
+
+
+Puedes generar una versión completa en choosealicense.com/licenses/mit
+
+📁 3. Estructura de carpetas inicial para Next.js + Prisma + Tailwind
+soundmate/
+├── public/
+│   └── favicon.ico
+├── prisma/
+│   └── schema.prisma
+├── src/
+│   ├── components/
+│   │   └── Navbar.tsx
+│   ├── pages/
+│   │   ├── api/
+│   │   │   └── auth/[...nextauth].ts
+│   │   └── index.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── lib/
+│   │   ├── spotify.ts
+│   │   └── prisma.ts
+│   ├── utils/
+│   │   └── matchAlgorithm.ts
+│   └── types/
+│       └── index.ts
+├── .env
+├── .gitignore
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+└── tsconfig.json
+
+
+¿Quieres que genere el schema.prisma y las primeras rutas para Spotify Auth?
+
+🧱 4. Modelo de base de datos (Prisma)
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  name          String?
+  email         String?  @unique
+  image         String?
+  spotifyId     String   @unique
+  topArtists    String[]
+  topGenres     String[]
+  topTracks     String[]
+  createdAt     DateTime @default(now())
+  likedTracks   Track[]  @relation("LikedTracks")
+  matches       Match[]  @relation("UserMatches")
+}
+
+model Track {
+  id        String   @id
+  name      String
+  artist    String
+  album     String
+  previewUrl String?
+  imageUrl  String
+  likedBy   User[]   @relation("LikedTracks")
+}
+
+model Match {
+  id         String   @id @default(cuid())
+  userA      User     @relation("UserMatches", fields: [userAId], references: [id])
+  userAId    String
+  userB      User     @relation("UserMatches", fields: [userBId], references: [id])
+  userBId    String
+  score      Float
+  createdAt  DateTime @default(now())
+}
+
+🖼️ 5. Wireframes (Texto)
+
+Te dejo una descripción rápida para que puedas hacerlos en Figma o Whimsical:
+
+📱 Página de inicio (Landing)
+
+Logo y eslogan
+
+Botón "Conectar con Spotify"
+
+Breve descripción de la app
+
+👤 Perfil musical
+
+Avatar
+
+Canciones/artistas más escuchados
+
+Playlists recientes
+
+Botón: "Ver gustos similares"
+
+📡 Feed social
+
+Lista de canciones que tus amigos están escuchando
+
+Opción de dar like, comentar o añadir a playlist
+
+🧬 Descubrimiento de matches
+
+Tarjetas con otros usuarios (nombre, gustos musicales)
+
+Porcentaje de compatibilidad
+
+Botón "Seguir" o "Chatear"
