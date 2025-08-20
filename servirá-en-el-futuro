@@ -475,3 +475,36 @@ Tarjetas con otros usuarios (nombre, gustos musicales)
 Porcentaje de compatibilidad
 
 Botón "Seguir" o "Chatear"
+
+mermaid de la web
+flowchart TD
+    A[Inicio: Usuario ingresa a SoundMate] --> B[¿Está autenticado con Spotify?]
+
+    B -- No --> C[Redirigir a Login con OAuth Spotify]
+    C --> D[Permitir acceso a datos de escucha]
+    D --> E[Guardar tokens y datos en BD]
+
+    B -- Sí --> F[Cargar perfil musical]
+
+    F --> G[Mostrar Feed en tiempo real]
+    F --> H[Mostrar estadísticas y gustos musicales]
+    F --> I[Obtener recomendaciones de amistad]
+    F --> J[Obtener recomendaciones musicales]
+
+    G --> K[Interaccion publicaciones - likes, comentarios, guardar]
+    H --> L[Comparar con amigos]
+    I --> M[Seguir o chatear con matches]
+    J --> N[Explorar playlists y géneros recomendados]
+
+    F --> O[Acceder a configuración y privacidad]
+    O --> P[Modificar preferencias de visibilidad y notificaciones]
+
+    N --> Q[Compartir canción o playlist]
+    K --> Q
+    L --> Q
+
+    Q --> R[Actualizar Feed / Perfil musical]
+
+    R --> F
+
+    P --> F
