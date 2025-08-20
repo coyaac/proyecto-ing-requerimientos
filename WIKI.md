@@ -99,3 +99,6 @@
 ## 🚀 Objetivo final
 Empoderar a padres y cuidadores con herramientas prácticas, intuitivas y respaldadas por datos para mejorar el descanso de sus bebés.
 
+
+<img width="3840" height="2839" alt="Untitled diagram _ Mermaid Chart-2025-08-20-202053" src="https://github.com/user-attachments/assets/191a4932-2c4a-45c7-af3b-424c6ce040a0" />
+
