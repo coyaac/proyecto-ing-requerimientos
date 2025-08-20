@@ -130,3 +130,6 @@ Este proyecto está bajo la licencia [MIT](LICENSE).
 ¿Quieres colaborar? ¡Genial! Por favor, revisa las normas de contribución en [CONTRIBUTING.md](CONTRIBUTING.md) y comienza con un pull request.
 
 ---
+
+<img width="3840" height="1680" alt="Untitled diagram _ Mermaid Chart-2025-08-20-205021" src="https://github.com/user-attachments/assets/c491a256-9ed8-4c53-b6af-4925121d3a22" />
+
