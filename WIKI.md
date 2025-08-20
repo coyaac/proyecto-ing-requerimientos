@@ -1,17 +1,18 @@
-# BabySleep - App para monitoreo del sueño semanal del bebé
+# 🎵 SoundMate – Red Social Musical Basada en tu Spotify
 
-## 🍼 Descripción del proyecto
-**BabySleep** es una aplicación móvil pensada para padres que desean monitorear y entender los patrones de sueño de su bebé. La app permite registrar datos diarios, visualizar estadísticas semanales y recibir recomendaciones personalizadas, con el objetivo de mejorar el descanso del bebé y la calidad de vida de la familia.
+## 🎧 Descripción del proyecto  
+**SoundMate** es una red social para amantes de la música que permite compartir lo que escuchas, descubrir nuevas canciones y conectarte con personas que tienen gustos similares, todo basado en tu perfil de Spotify. A través de una interfaz personalizada y recomendaciones inteligentes, SoundMate transforma tu historial de escucha en una experiencia social única.
 
 ---
 
 ## 📲 Funcionalidades principales
 
-- Registro automático o manual de los períodos de sueño.
-- Visualización de estadísticas diarias y semanales.
-- Alertas personalizadas para siestas y hora de dormir.
-- Consejos basados en los datos recolectados.
-- Perfil del bebé con datos relevantes.
+- 🔗 Sincronización automática con tu cuenta de Spotify  
+- 🧬 Perfil musical personalizado: artistas favoritos, géneros, playlists  
+- 🧑‍🤝‍🧑 Recomendaciones de usuarios con gustos similares  
+- 📡 Feed en tiempo real con lo que tus amigos están escuchando  
+- 🎯 Sugerencias de música personalizadas  
+- 🔁 Compartir canciones, playlists y estados musicales  
 
 ---
 
@@ -19,86 +20,113 @@
 
 ### 🏗️ Arquitectura general
 
-- **Frontend:** React Native (iOS y Android)
-- **Backend:** Node.js + Express
-- **Base de datos:** MongoDB
-- **Autenticación:** JSON Web Tokens (JWT)
+- **Frontend:** Next.js + TailwindCSS  
+- **Backend:** Node.js + Express  
+- **Base de datos:** PostgreSQL (via Prisma ORM)  
+- **Autenticación:** OAuth 2.0 con Spotify  
+- **Integración externa:** Spotify Web API  
+- **Recomendaciones:** Sistema basado en embeddings musicales (vectores de similitud)
 
 ---
 
 ### 🧩 Módulos principales
 
 #### 1. Login / Registro
-- Inicio de sesión y registro mediante email o redes sociales (Google, Facebook).
-- Recuperación de contraseña.
-- Autenticación con JWT.
+- Autenticación vía Spotify (OAuth)
+- Almacenamiento seguro de tokens y datos del usuario
+- Opción para configurar privacidad del perfil
 
-#### 2. Perfil del bebé
-- Registro y edición del perfil del bebé (nombre, fecha de nacimiento, peso, etc.).
-- Historial médico básico.
+#### 2. Perfil musical
+- Estadísticas: artistas más escuchados, géneros, canciones top
+- Visualización de cambios semanales/mensuales
+- Comparación de perfiles con amigos
 
-#### 3. Monitoreo de sueño
-- Registro manual de inicio y fin del sueño.
-- Opcional: Sincronización con wearables o dispositivos IoT.
-- Almacenamiento seguro en base de datos.
+#### 3. Feed social
+- Muestra lo que tus contactos están escuchando en tiempo real
+- Opción de dar "me gusta", comentar y guardar canciones
+- Publicaciones personalizadas (ej. “Mi canción del día”)
 
-#### 4. Visualización y reportes
-- Gráficos con duración y calidad del sueño por día y semana.
-- Tendencias, comparativas y puntos de mejora.
-- Exportación de reportes en PDF.
+#### 4. Recomendador de amistades
+- Algoritmo que analiza tu historial y genera matches musicales
+- Muestra perfiles con compatibilidad alta
+- Posibilidad de seguir o chatear con matches
 
-#### 5. Notificaciones y alertas
-- Recordatorios para siestas y sueño nocturno.
-- Alertas automáticas basadas en hábitos detectados.
+#### 5. Recomendador musical
+- Playlists personalizadas según tu historial + el de tus amigos
+- Explorador por moods, géneros y artistas en tendencia
 
-#### 6. Configuración y ajustes
-- Preferencias de usuario.
-- Gestión de notificaciones push.
-- Acceso a soporte y ayuda.
+#### 6. Configuración y privacidad
+- Control total sobre qué se comparte
+- Filtros para mostrar u ocultar actividad
+- Notificaciones y gestión de conexión con Spotify
 
 ---
 
 ## 🧪 Tecnologías utilizadas
 
-| Componente     | Tecnología              |
-|----------------|--------------------------|
-| Frontend       | React Native             |
-| Backend        | Node.js + Express        |
-| Base de datos  | MongoDB                  |
-| Autenticación  | JWT                      |
-| Notificaciones | Firebase Cloud Messaging |
-| Visualización  | Chart.js / Recharts      |
+| Componente        | Tecnología                     |
+|-------------------|-------------------------------|
+| Frontend          | Next.js + TailwindCSS         |
+| Backend           | Node.js + Express             |
+| Base de datos     | PostgreSQL + Prisma ORM       |
+| Autenticación     | OAuth 2.0 (Spotify)           |
+| Recomendaciones   | TensorFlow.js + Cosine Similarity |
+| APIs externas     | Spotify Web API               |
+| Visualización     | Chart.js / D3.js              |
 
 ---
 
 ## 🗺️ Roadmap
 
 ### MVP (Versión inicial)
-- Registro de usuario
-- Registro manual de sueño
-- Visualización básica
+- ✅ Login con Spotify  
+- ✅ Perfil musical básico  
+- ✅ Feed con lo que estás escuchando  
+- ✅ Recomendaciones simples de usuarios  
 
 ### Fase 2
-- Integración con dispositivos de monitoreo
-- Reportes avanzados y exportación
+- 💬 Sistema de mensajes y conexión entre usuarios  
+- 🎧 Recomendaciones de música personalizadas  
+- 📊 Estadísticas avanzadas y visualizaciones  
 
 ### Fase 3
-- Recomendaciones basadas en IA
-- Modo multibebé
-- Comunidad de padres integrada
+- 🧠 Algoritmo de matching musical más preciso (AI)  
+- 🤝 Playlist colaborativas  
+- 📱 Versión móvil (PWA o React Native)
 
 ---
 
 ## 👥 Público objetivo
-- Padres primerizos
-- Cuidadores y niñeras
-- Profesionales de la salud pediátrica
+
+- Melómanos que buscan nuevas conexiones  
+- Usuarios activos de Spotify  
+- Personas que valoran la música como lenguaje social  
+- Artistas independientes que buscan visibilidad  
 
 ---
 
 ## 🚀 Objetivo final
-Empoderar a padres y cuidadores con herramientas prácticas, intuitivas y respaldadas por datos para mejorar el descanso de sus bebés.
 
+Crear una plataforma donde la música sea el puente para crear conexiones humanas auténticas, permitiendo descubrir canciones, artistas y personas a través de lo que más te representa: lo que escuchas.
 
-<img width="3840" height="2839" alt="Untitled diagram _ Mermaid Chart-2025-08-20-202053" src="https://github.com/user-attachments/assets/191a4932-2c4a-45c7-af3b-424c6ce040a0" />
+---
 
+## 📌 Estado del proyecto
+
+> 🚧 Proyecto en desarrollo activo  
+>  
+> Se aceptan colaboraciones y sugerencias. ¡Feel free to fork and contribute!
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+
+---
+
+## 🤝 Contribuciones
+
+¿Quieres colaborar? ¡Genial! Por favor, revisa las normas de contribución en [CONTRIBUTING.md](CONTRIBUTING.md) y comienza con un pull request.
+
+---
